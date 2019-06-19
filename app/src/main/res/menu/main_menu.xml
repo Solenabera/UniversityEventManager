@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/message"
+        android:icon="@mipmap/action_message"
+        android:title="Message"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/notify"
+        android:icon="@mipmap/action_notification"
+        android:title="@string/notification"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_settings_btn"
+        android:title="@string/profile_setting" />
+    <item
+        android:id="@+id/action_password_change_btn"
+        android:title="@string/change_password" />
+    <item
+        android:id="@+id/action_developer_btn"
+        android:title="@string/developer" />
+    <item
+        android:id="@+id/action_Version_btn"
+        android:title="@string/version" />
+    <item
+        android:id="@+id/action_logout_btn"
+        android:title="@string/action_logout_text" />
+</menu>

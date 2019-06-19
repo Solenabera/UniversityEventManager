@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sol.sba">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/admin"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".SetupActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".NewPostActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PasswordChangeActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DeveloperActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CommentsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MovieCommentsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SportCommentsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ActivityVersion"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".NotificationActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".MessageActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Log"></activity>
+    </application>
+
+</manifest>
